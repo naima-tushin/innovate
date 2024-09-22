@@ -5,8 +5,8 @@ import Discover from '../Discover/Discover';
 const Homepage = () => {
     return (
         <div>
-            <OverviewCollection/>
-            {/* <Discover/> */}
+            {/* <OverviewCollection/> */}
+            <Discover/>
         </div>
     );
 };
