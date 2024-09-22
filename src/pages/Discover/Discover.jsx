@@ -177,8 +177,8 @@ const Discover = () => {
                         <Image
                             src="/images/ion_filter.png"
                             alt="Filter"
-                            width={18} 
-                            height={18} 
+                            width={18}
+                            height={18}
                             className="mr-2"
                         />
                         All Filters
@@ -200,8 +200,8 @@ const Discover = () => {
                                         key={index}
                                         src={participant}
                                         alt={`Participant ${index + 1}`}
-                                        width={32} 
-                                        height={32} 
+                                        width={32}
+                                        height={32}
                                         className="bg-gray-300 rounded-full"
                                     />
                                 ))}

@@ -19,16 +19,23 @@ const OverviewCollection = () => {
     ];
 
     const handleNext = () => {
-        if (visibleCount < boxes.length) {
+        if (clickedIndex < visibleCount - 1) {
+            setClickedIndex(prev => prev + 1);
+        } else if (visibleCount < boxes.length) {
             setVisibleCount(prev => prev + 1);
+            setClickedIndex(prev => prev + 1);
         }
     };
-
+    
     const handlePrev = () => {
-        if (visibleCount > 3) {
+        if (clickedIndex > 0) {
+            setClickedIndex(prev => prev - 1);
+        } else if (visibleCount > 3) {
             setVisibleCount(prev => prev - 1);
+            setClickedIndex(prev => prev - 1);
         }
     };
+    
 
     const handleBoxClick = (index) => {
         setClickedIndex(index);
