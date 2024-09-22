@@ -5,7 +5,7 @@ import Discover from '../Discover/Discover';
 const Homepage = () => {
     return (
         <div>
-            {/* <OverviewCollection/> */}
+            <OverviewCollection/>
             <Discover/>
         </div>
     );
