@@ -174,7 +174,13 @@ const Discover = () => {
                 </div>
                 <div className="flex justify-center items-center">
                     <button className="flex items-center px-4 py-2 bg-[#E9E9E9] text-[#4000FF] rounded-full font-medium text-xs">
-                        <Image src="/images/ion_filter.png" alt="" className="mr-2" />
+                        <Image
+                            src="/images/ion_filter.png"
+                            alt="Filter"
+                            width={18} // specify the width
+                            height={18} // specify the height
+                            className="mr-2"
+                        />
                         All Filters
                     </button>
                 </div>
@@ -190,7 +196,14 @@ const Discover = () => {
                             {/* Participants */}
                             <div className="flex -space-x-3 -mt-6 mb-3">
                                 {card.participants.map((participant, index) => (
-                                    <Image key={index} src={participant} alt={`Participant ${index + 1}`} className="w-8 h-8 bg-gray-300 rounded-full" />
+                                    <Image
+                                        key={index}
+                                        src={participant}
+                                        alt={`Participant ${index + 1}`}
+                                        width={32} // specify the width
+                                        height={32} // specify the height
+                                        className="bg-gray-300 rounded-full"
+                                    />
                                 ))}
                             </div>
 
